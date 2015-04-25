@@ -6,7 +6,8 @@ function init(){
 	    'panel': document.getElementById('map'),
 	    'menu': document.getElementById('menu'),
 	    'padding': 256,
-	    'tolerance': 70
+	    'tolerance': 70,
+	    'edgeWidth': 50
 	  });
 	  // Toggle button
 	  document.querySelector('.slideout-toggle').addEventListener('click', function() {
