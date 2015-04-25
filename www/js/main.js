@@ -1,7 +1,19 @@
 var map;
 
 function init(){
-    map = new ol.Map({
+
+  var slideout = new Slideout({
+	    'panel': document.getElementById('map'),
+	    'menu': document.getElementById('menu'),
+	    'padding': 256,
+	    'tolerance': 70
+	  });
+	  // Toggle button
+	  document.querySelector('.slideout-toggle').addEventListener('click', function() {
+	    slideout.toggle();
+	  });
+  
+  map = new ol.Map({
         target:'map',
         renderer:'canvas',
     	view: new ol.View({
